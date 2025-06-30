@@ -34,6 +34,10 @@ Arduino-based animatronic eye control system with realistic eye movements and bl
 * `a` - Test all servos
 * `c` - Center all servos
 * `s` - Smooth movement demo
+
+
+
+
 * `o` - Circular look-around
 * `i` - Natural idle motion
 * `f` - Final coordinated test
@@ -47,5 +51,6 @@ Arduino-based animatronic eye control system with realistic eye movements and bl
 
 Perfect for animatronics, robotics projects, or interactive displays requiring lifelike eye movement.
 
-Uploading WhatsApp Video 2025-06-29 at 11.03.14 AM.mp4…
+https://github.com/user-attachments/assets/c571d172-4f8d-4701-bc2a-3f71738db182
+
 
