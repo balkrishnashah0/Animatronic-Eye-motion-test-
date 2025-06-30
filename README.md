@@ -46,3 +46,6 @@ Arduino-based animatronic eye control system with realistic eye movements and bl
 4. Use `c` to center, then `i` for idle behavior
 
 Perfect for animatronics, robotics projects, or interactive displays requiring lifelike eye movement.
+
+Uploading WhatsApp Video 2025-06-29 at 11.03.14 AM.mp4…
+
