@@ -1,6 +1,5 @@
+Arduino-based animatronics for humanoid robot (KAAZI)
 # Eye Controller (eyecontrollertest.ino)
-
-Arduino-based animatronic eye control system with realistic eye movements and blinking behavior.
 
 ## Features
 
