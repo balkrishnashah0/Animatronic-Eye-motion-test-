@@ -1,4 +1,4 @@
-# Eye Controller
+# Eye Controller (eyecontrollertest.ino)
 
 Arduino-based animatronic eye control system with realistic eye movements and blinking behavior.
 
@@ -34,10 +34,6 @@ Arduino-based animatronic eye control system with realistic eye movements and bl
 * `a` - Test all servos
 * `c` - Center all servos
 * `s` - Smooth movement demo
-
-
-
-
 * `o` - Circular look-around
 * `i` - Natural idle motion
 * `f` - Final coordinated test
@@ -48,9 +44,56 @@ Arduino-based animatronic eye control system with realistic eye movements and bl
 2. Connect PCA9685 to Arduino (I2C: SDA/SCL + power)
 3. Upload code and open Serial Monitor (9600 baud)
 4. Use `c` to center, then `i` for idle behavior
-
-Perfect for animatronics, robotics projects, or interactive displays requiring lifelike eye movement.
+## 3D model
+https://willcogley.notion.site/7972fc916e4d425ab99d0a301dee5123?v=bd4c5db145434379af22f3a8193bfbe3&p=1af24779b64d80b19edfdd795d4b90e5&pm=c
 
 https://github.com/user-attachments/assets/c571d172-4f8d-4701-bc2a-3f71738db182
+
+
+# Neck & Jaw Controller (neckAndjawSmoothTest.ino)
+Arduino-based animatronic head control system with smooth neck movement and jaw articulation for realistic character expressions.
+
+## Features
+* 3-DOF neck control - Yaw (left/right) and pitch (up/down) using dual-servo tilt mechanism
+* Jaw articulation - Independent jaw control for speech and expressions
+* Smooth motion - Exponential ease-in-out curves for natural movement
+* Expression system - Pre-programmed emotions (happy, surprised, confused, talking)
+* Multi-servo coordination - Synchronized movement of multiple servos
+* Safety limits - Built-in constraints to prevent mechanical damage
+
+## Hardware Requirements
+* Arduino (Uno/Nano/ESP32)
+* Adafruit PWM Servo Driver (PCA9685)
+* 4x Servo motors (3x 270° for neck, 1x 180° for jaw)
+* 5V power supply for servos
+
+## Servo Configuration
+| Servo | Channel | Function | Home Position |
+|-------|---------|----------|---------------|
+| 15 | SERVO_NECK_YAW | Neck yaw (left/right) | 120° |
+| 14 | SERVO_NECK_LEFT | Neck pitch (left tilt) | 170° |
+| 13 | SERVO_NECK_RIGHT | Neck pitch (right tilt) | 110° |
+| 6 | JAW_CHANNEL | Jaw open/close | 96° (closed) |
+
+## Serial Commands
+* `c` - Center head and close jaw
+* `l/r` - Look left/right
+* `u/d` - Look up/down
+* `o/j` - Open/close jaw
+* `h` - Happy expression
+* `s` - Surprised expression
+* `t` - Talk sequence
+* `n` - Nodding motion
+* `k` - Head shake with jaw
+* `z` - Test all movements
+
+## Quick Start
+1. Wire servos to PCA9685 board
+2. Connect PCA9685 to Arduino (I2C: SDA/SCL + power)
+3. Upload code and open Serial Monitor (9600 baud)
+4. Use `c` to center, then try expressions with `h`, `s`, `t`
+
+https://github.com/user-attachments/assets/833339ef-6eb4-4117-b984-a49a21ce2fa0
+
 
 
