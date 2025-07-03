@@ -423,7 +423,7 @@ void printCurrentPositions() {
 
 // Test Functions 
 void testAllMovements() {
-  Serial.println("=== Testing All Smooth Movements ===");
+  Serial.println("Testing All Smooth Movements");
   // Test head movements
   Serial.println("Testing smooth head movements...");
   centerHead();
@@ -450,5 +450,5 @@ void testAllMovements() {
   delay(1000);
   expressionSurprised();
   delay(1000);
-  Serial.println("=== All Smooth Tests Complete ===");
+  Serial.println("All Smooth Tests Complete");
 }
